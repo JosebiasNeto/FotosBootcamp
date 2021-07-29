@@ -10,20 +10,29 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_baseline_image_24"
         android:contentDescription="@string/txt_image"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_pick_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="16dp"
         style="@style/Widget.AppCompat.Button.Colored"
         android:text="@string/txt_button"/>
+
+    <Button
+        android:id="@+id/btn_open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/txt_btn_open_camera"/>
 
 
 

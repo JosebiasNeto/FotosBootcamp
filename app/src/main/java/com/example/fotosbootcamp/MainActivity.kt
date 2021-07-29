@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
+        btn_pick_image.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
                 if (checkSelfPermission(android.Manifest.permission.READ_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_DENIED) {
@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             } else {
                 pickImageFromGalery()
             }
+        }
+
+        btn_open_camera.setOnClickListener {
+
         }
     }
 
